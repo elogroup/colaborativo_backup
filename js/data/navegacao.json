@@ -1,0 +1,14 @@
+[{
+    "text": "adapter",
+    "id": "source\/adapter",
+    "cls": "folder"
+}, {
+    "text": "dd",
+    "id": "source\/dd",
+    "cls": "folder"
+}, {
+    "text": "debug.js",
+    "id": "source\/debug.js",
+    "leaf": true,
+    "cls": "file"
+}]

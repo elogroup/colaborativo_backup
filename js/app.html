@@ -1,0 +1,32 @@
+<!-- Auto Generated with Ext Designer -->
+<!-- Modifications to this file will be overwritten. -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>colaborativo.xds</title>
+    <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/ext-3.2.0/resources/css/ext-all.css"/>
+    <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.2.0/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.2.0/ext-all-debug.js"></script>
+    <script type="text/javascript" src="Navegacao.ui.js"></script>
+    <script type="text/javascript" src="Navegacao.js"></script>
+    <script>
+
+		Ext.onReady(function() {
+			new Ext.Viewport({
+				layout:'border',
+				items:[
+					new Navegacao({region:'west'}),
+					new Ext.TabPanel({region:'center', items:[new Ext.Panel({html:"oi", title:"Oi"})]}),
+					]
+			})
+		
+		 // var navegacao = new Navegacao({
+		 //        renderTo: Ext.getBody()
+		 //    });
+		 //    navegacao.show();
+		});
+
+		</script>
+</head>
+<body></body>
+</html>

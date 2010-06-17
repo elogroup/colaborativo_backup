@@ -1,0 +1,88 @@
+{
+	"name": "colaborativo.xds",
+	"projectId": "370AB942-CB9B-4DEE-8858-46834C7F3D9D",
+	"settings": {
+		"urlPrefix": "http://localhost/",
+		"directAPI": "",
+		"spacesToIndent": "4",
+		"codeGenFormat": "Class",
+		"extPath": "http://extjs.cachefly.net/ext-3.2.0/",
+		"exportPath": "../js/",
+		"lineEnding": "LF"
+	},
+	"xdsVersion": "xds-1.0.1.0c",
+	"components": [
+		{
+			"cid": "panel",
+			"jsClass": "Navegacao",
+			"userConfig": {
+				"layout": "accordion",
+				"title": "Navegação",
+				"activeItem": 0
+			},
+			"cn": [
+				{
+					"cid": "tree",
+					"jsClass": "Navegacao",
+					"userConfig": {
+						"title": "Grupos",
+						"rootVisible": true
+					},
+					"cn": [
+						{
+							"cid": "asyncnode",
+							"dock": "root",
+							"userConfig": {
+								"text": "Root Node"
+							}
+						},
+						{
+							"cid": "asynctreeloader",
+							"dock": "loader",
+							"userConfig": {
+								"url": "./data/navegacao.json",
+								"preloadChildren": true
+							}
+						},
+						{
+							"cid": "toolbar",
+							"jsClass": "MyToolbar",
+							"dock": "tbar",
+							"cn": [
+								{
+									"cid": "button",
+									"jsClass": "MyButton",
+									"userConfig": {
+										"text": "Todos",
+										"autoRef": "todosBtn"
+									}
+								},
+								{
+									"cid": "tbseparator",
+									"jsClass": "MySeparator"
+								},
+								{
+									"cid": "button",
+									"jsClass": "MyButton1",
+									"userConfig": {
+										"text": "Meus",
+										"autoRef": "meusBtn"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"cid": "panel",
+					"jsClass": "MyPanel"
+				},
+				{
+					"cid": "panel",
+					"jsClass": "MyPanel1"
+				}
+			]
+		}
+	],
+	"stores": []
+}
