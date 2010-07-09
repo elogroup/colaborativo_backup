@@ -177,7 +177,8 @@
 				"layout": "accordion",
 				"collapsible": "-ext-undefined-",
 				"width": 725,
-				"height": 514
+				"height": 514,
+				"activeItem": 1
 			},
 			"userXType": "principal",
 			"cn": [
@@ -352,17 +353,6 @@
 							]
 						}
 					]
-				},
-				{
-					"id": "MyPanel10",
-					"cid": "panel",
-					"jsClass": "MyPanel",
-					"userConfig": {
-						"height": 100,
-						"title": "Descrição do Grupo",
-						"autoHeight": true,
-						"autoWidth": true
-					}
 				},
 				{
 					"id": "MyPanel11",
