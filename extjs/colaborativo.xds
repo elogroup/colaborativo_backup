@@ -53,15 +53,13 @@
 				{
 					"id": "MyUserComponent1",
 					"cid": "usercomponent",
-					"jsClass": "MyPanel4",
+					"jsClass": "Principal",
 					"userConfig": {
 						"jsClass": "Principal",
 						"userXType": "principal",
-						"region": "center",
-						"collapseMode": "-ext-undefined-",
-						"split": "-ext-undefined-"
+						"region": "center"
 					},
-					"userComponent": "MyPanel3"
+					"userComponent": "MyPanel4"
 				},
 				{
 					"id": "MyUserComponent2",
@@ -72,7 +70,8 @@
 						"userXType": "detalhe",
 						"region": "east",
 						"split": true,
-						"minWidth": 300
+						"minWidth": 300,
+						"width": 74
 					},
 					"userComponent": "MyPanel5"
 				}
@@ -177,12 +176,183 @@
 				"title": "Principal",
 				"layout": "accordion",
 				"collapsible": "-ext-undefined-",
-				"activeTab": 0,
 				"width": 725,
 				"height": 514
 			},
 			"userXType": "principal",
 			"cn": [
+				{
+					"id": "MyToolbar1",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar1",
+					"dock": "tbar",
+					"cn": [
+						{
+							"id": "MyButton2",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"userConfig": {
+								"text": "Sumário"
+							}
+						},
+						{
+							"id": "MySeparator1",
+							"cid": "tbseparator",
+							"jsClass": "MySeparator1"
+						},
+						{
+							"id": "MyButton3",
+							"cid": "button",
+							"jsClass": "MyButton3",
+							"userConfig": {
+								"text": "Fórum"
+							},
+							"cn": [
+								{
+									"id": "MyMenu",
+									"cid": "menu",
+									"jsClass": "MyMenu",
+									"dock": "menu",
+									"cn": [
+										{
+											"id": "MyMenuItem",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem",
+											"userConfig": {
+												"text": "Filtrar Tópicos"
+											}
+										},
+										{
+											"id": "MyMenuItem1",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem1",
+											"userConfig": {
+												"text": "Publicar Novo Tópico"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "MySeparator2",
+							"cid": "tbseparator",
+							"jsClass": "MySeparator2"
+						},
+						{
+							"id": "MyButton4",
+							"cid": "button",
+							"jsClass": "MyButton4",
+							"userConfig": {
+								"text": "Eventos"
+							},
+							"cn": [
+								{
+									"id": "MyMenu1",
+									"cid": "menu",
+									"jsClass": "MyMenu1",
+									"dock": "menu",
+									"cn": [
+										{
+											"id": "MyMenuItem2",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem2",
+											"userConfig": {
+												"text": "Filtrar Eventos"
+											}
+										},
+										{
+											"id": "MyMenuItem3",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem3",
+											"userConfig": {
+												"text": "Publicar Novo Evento"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "MySeparator3",
+							"cid": "tbseparator",
+							"jsClass": "MySeparator3"
+						},
+						{
+							"id": "MyButton5",
+							"cid": "button",
+							"jsClass": "MyButton5",
+							"userConfig": {
+								"text": "Arquivos"
+							},
+							"cn": [
+								{
+									"id": "MyMenu2",
+									"cid": "menu",
+									"jsClass": "MyMenu2",
+									"dock": "menu",
+									"cn": [
+										{
+											"id": "MyMenuItem4",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem4",
+											"userConfig": {
+												"text": "Filtrar Arquivos"
+											}
+										},
+										{
+											"id": "MyMenuItem5",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem5",
+											"userConfig": {
+												"text": "Publicar Novo Arquivo"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "MySeparator4",
+							"cid": "tbseparator",
+							"jsClass": "MySeparator4"
+						},
+						{
+							"id": "MyButton6",
+							"cid": "button",
+							"jsClass": "MyButton6",
+							"userConfig": {
+								"text": "Seguidores"
+							},
+							"cn": [
+								{
+									"id": "MyMenu3",
+									"cid": "menu",
+									"jsClass": "MyMenu3",
+									"dock": "menu",
+									"cn": [
+										{
+											"id": "MyMenuItem6",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem6",
+											"userConfig": {
+												"text": "Ver Seguidores do Grupo"
+											}
+										},
+										{
+											"id": "MyMenuItem7",
+											"cid": "menuitem",
+											"jsClass": "MyMenuItem7",
+											"userConfig": {
+												"text": "Enviar Mensagem a um Seguidor"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
 				{
 					"id": "MyPanel10",
 					"cid": "panel",
@@ -192,218 +362,7 @@
 						"title": "Descrição do Grupo",
 						"autoHeight": true,
 						"autoWidth": true
-					},
-					"cn": [
-						{
-							"id": "MyToolbar1",
-							"cid": "toolbar",
-							"jsClass": "MyToolbar1",
-							"dock": "tbar",
-							"cn": [
-								{
-									"id": "MyButton2",
-									"cid": "button",
-									"jsClass": "MyButton2",
-									"userConfig": {
-										"text": "Sumário"
-									}
-								},
-								{
-									"id": "MySeparator1",
-									"cid": "tbseparator",
-									"jsClass": "MySeparator1"
-								},
-								{
-									"id": "MyButton3",
-									"cid": "button",
-									"jsClass": "MyButton3",
-									"userConfig": {
-										"text": "Fórum"
-									},
-									"cn": [
-										{
-											"id": "MyMenu",
-											"cid": "menu",
-											"jsClass": "MyMenu",
-											"dock": "menu",
-											"cn": [
-												{
-													"id": "MyMenuItem",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem",
-													"userConfig": {
-														"text": "Filtrar Tópicos"
-													}
-												},
-												{
-													"id": "MyMenuItem1",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem1",
-													"userConfig": {
-														"text": "Publicar Novo Tópico"
-													}
-												}
-											]
-										}
-									]
-								},
-								{
-									"id": "MySeparator2",
-									"cid": "tbseparator",
-									"jsClass": "MySeparator2"
-								},
-								{
-									"id": "MyButton4",
-									"cid": "button",
-									"jsClass": "MyButton4",
-									"userConfig": {
-										"text": "Eventos"
-									},
-									"cn": [
-										{
-											"id": "MyMenu1",
-											"cid": "menu",
-											"jsClass": "MyMenu1",
-											"dock": "menu",
-											"cn": [
-												{
-													"id": "MyMenuItem2",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem2",
-													"userConfig": {
-														"text": "Filtrar Eventos"
-													}
-												},
-												{
-													"id": "MyMenuItem3",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem3",
-													"userConfig": {
-														"text": "Publicar Novo Evento"
-													}
-												}
-											]
-										}
-									]
-								},
-								{
-									"id": "MySeparator3",
-									"cid": "tbseparator",
-									"jsClass": "MySeparator3"
-								},
-								{
-									"id": "MyButton5",
-									"cid": "button",
-									"jsClass": "MyButton5",
-									"userConfig": {
-										"text": "Arquivos"
-									},
-									"cn": [
-										{
-											"id": "MyMenu2",
-											"cid": "menu",
-											"jsClass": "MyMenu2",
-											"dock": "menu",
-											"cn": [
-												{
-													"id": "MyMenuItem4",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem4",
-													"userConfig": {
-														"text": "Filtrar Arquivos"
-													}
-												},
-												{
-													"id": "MyMenuItem5",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem5",
-													"userConfig": {
-														"text": "Publicar Novo Arquivo"
-													}
-												}
-											]
-										}
-									]
-								},
-								{
-									"id": "MySeparator4",
-									"cid": "tbseparator",
-									"jsClass": "MySeparator4"
-								},
-								{
-									"id": "MyButton6",
-									"cid": "button",
-									"jsClass": "MyButton6",
-									"userConfig": {
-										"text": "Seguidores"
-									},
-									"cn": [
-										{
-											"id": "MyMenu3",
-											"cid": "menu",
-											"jsClass": "MyMenu3",
-											"dock": "menu",
-											"cn": [
-												{
-													"id": "MyMenuItem6",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem6",
-													"userConfig": {
-														"text": "Ver Seguidores do Grupo"
-													}
-												},
-												{
-													"id": "MyMenuItem7",
-													"cid": "menuitem",
-													"jsClass": "MyMenuItem7",
-													"userConfig": {
-														"text": "Enviar Mensagem a um Seguidor"
-													}
-												}
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"id": "MyGrid",
-							"cid": "grid",
-							"jsClass": "MyGrid",
-							"userConfig": {
-								"title": "Sumário",
-								"autoExpandColumn": 1,
-								"store": "(none)"
-							},
-							"cn": [
-								{
-									"id": "MyColumn",
-									"cid": "gridcolumn",
-									"jsClass": "MyColumn",
-									"userConfig": {
-										"header": "Título",
-										"width": 100,
-										"align": "center",
-										"id": 1,
-										"sortable": true,
-										"resizable": "-ext-undefined-"
-									}
-								},
-								{
-									"id": "MyColumn1",
-									"cid": "datecolumn",
-									"jsClass": "MyColumn1",
-									"userConfig": {
-										"header": "Data",
-										"align": "center",
-										"width": 100,
-										"sortable": true,
-										"resizable": "-ext-undefined-"
-									}
-								}
-							]
-						}
-					]
+					}
 				},
 				{
 					"id": "MyPanel11",
@@ -431,13 +390,13 @@
 			"cid": "tabpanel",
 			"jsClass": "Conteudo",
 			"userConfig": {
-				"activeTab": 0,
+				"activeTab": 2,
 				"width": 578,
 				"height": 366
 			},
 			"cn": [
 				{
-					"id": "MyPanel6",
+					"id": "MyPanel3",
 					"cid": "panel",
 					"jsClass": "MyPanel6",
 					"userConfig": {
@@ -453,7 +412,7 @@
 					]
 				},
 				{
-					"id": "MyPanel7",
+					"id": "MyPanel6",
 					"cid": "panel",
 					"jsClass": "MyPanel7",
 					"userConfig": {
@@ -461,7 +420,7 @@
 					}
 				},
 				{
-					"id": "MyPanel8",
+					"id": "MyPanel7",
 					"cid": "panel",
 					"jsClass": "MyPanel8",
 					"userConfig": {
