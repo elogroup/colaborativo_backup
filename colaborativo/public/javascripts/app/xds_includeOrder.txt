@@ -1,0 +1,17 @@
+<script type="text/javascript" src="Navegacao.ui.js"></script>
+<script type="text/javascript" src="Navegacao.js"></script>
+<script type="text/javascript" src="Principal.ui.js"></script>
+<script type="text/javascript" src="Principal.js"></script>
+<script type="text/javascript" src="Detalhe.ui.js"></script>
+<script type="text/javascript" src="Detalhe.js"></script>
+<script type="text/javascript" src="Conteudo.ui.js"></script>
+<script type="text/javascript" src="Conteudo.js"></script>
+<script type="text/javascript" src="Forum.ui.js"></script>
+<script type="text/javascript" src="Forum.js"></script>
+<script type="text/javascript" src="Main.ui.js"></script>
+<script type="text/javascript" src="Main.js"></script>
+<script type="text/javascript" src="Eventos.ui.js"></script>
+<script type="text/javascript" src="Eventos.js"></script>
+<script type="text/javascript" src="Principal.ui.js"></script>
+<script type="text/javascript" src="Principal.js"></script>
+<script type="text/javascript" src="ForumStore.js"></script>

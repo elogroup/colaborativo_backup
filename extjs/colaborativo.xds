@@ -2,81 +2,16 @@
 	"name": "colaborativo.xds",
 	"projectId": "370AB942-CB9B-4DEE-8858-46834C7F3D9D",
 	"settings": {
-		"urlPrefix": "http://localhost/",
+		"urlPrefix": "http://localhost:3000/",
 		"directAPI": "",
 		"spacesToIndent": "4",
 		"codeGenFormat": "Class",
-		"extPath": "http://extjs.cachefly.net/ext-3.2.0/",
-		"exportPath": "../js/",
+		"extPath": "http://extjs.cachefly.net/ext-3.2.1/",
+		"exportPath": "../colaborativo/public/javascripts/app",
 		"lineEnding": "LF"
 	},
-	"xdsVersion": "xds-1.0.2.1",
+	"xdsVersion": "xds-1.0.2.2",
 	"components": [
-		{
-			"id": "MyForm",
-			"cid": "form",
-			"jsClass": "PainelPrincipal",
-			"userConfig": {
-				"width": 856,
-				"height": 700,
-				"title": "Elo Group",
-				"autoHeight": false,
-				"autoWidth": true,
-				"titleCollapse": true,
-				"bodyBorder": false,
-				"hideBorders": false,
-				"layout": "border",
-				"footer": true,
-				"frame": "-ext-undefined-",
-				"closable": false,
-				"maximizable": "-ext-undefined-",
-				"plain": "-ext-undefined-",
-				"resizable": "-ext-undefined-",
-				"modal": "-ext-undefined-",
-				"draggable": "-ext-undefined-"
-			},
-			"cn": [
-				{
-					"id": "MyUserComponent",
-					"cid": "usercomponent",
-					"jsClass": "Navegacao",
-					"userConfig": {
-						"jsClass": "Navegacao",
-						"userXType": "navegacao",
-						"region": "west",
-						"collapseMode": "-ext-undefined-",
-						"margins": "-ext-undefined-",
-						"split": true
-					},
-					"userComponent": "MyPanel"
-				},
-				{
-					"id": "MyUserComponent1",
-					"cid": "usercomponent",
-					"jsClass": "Principal",
-					"userConfig": {
-						"jsClass": "Principal",
-						"userXType": "principal",
-						"region": "center"
-					},
-					"userComponent": "MyPanel4"
-				},
-				{
-					"id": "MyUserComponent2",
-					"cid": "usercomponent",
-					"jsClass": "MyPanel5",
-					"userConfig": {
-						"jsClass": "Detalhe",
-						"userXType": "detalhe",
-						"region": "east",
-						"split": true,
-						"minWidth": 300,
-						"width": 74
-					},
-					"userComponent": "MyPanel5"
-				}
-			]
-		},
 		{
 			"id": "MyPanel",
 			"cid": "panel",
@@ -177,7 +112,8 @@
 				"layout": "accordion",
 				"collapsible": "-ext-undefined-",
 				"width": 725,
-				"height": 514
+				"height": 514,
+				"activeItem": 1
 			},
 			"userXType": "principal",
 			"cn": [
@@ -391,44 +327,273 @@
 			"jsClass": "Conteudo",
 			"userConfig": {
 				"activeTab": 2,
-				"width": 578,
-				"height": 366
+				"width": "-ext-undefined-",
+				"height": "-ext-undefined-",
+				"padding": "",
+				"tabMargin": 3
 			},
+			"userXType": "conteudo",
 			"cn": [
 				{
-					"id": "MyPanel3",
-					"cid": "panel",
+					"id": "MyUserComponent3",
+					"cid": "usercomponent",
+					"jsClass": "Forum",
+					"userConfig": {
+						"jsClass": "Forum",
+						"userXType": "forum"
+					},
+					"userComponent": "MyPanel8"
+				},
+				{
+					"id": "MyUserComponent1",
+					"cid": "usercomponent",
 					"jsClass": "MyPanel6",
 					"userConfig": {
-						"title": "Tab 1"
+						"jsClass": "Eventos",
+						"userXType": "eventos"
 					},
+					"userComponent": "MyPanel3"
+				},
+				{
+					"id": "MyUserComponent2",
+					"cid": "usercomponent",
+					"jsClass": "MyPanel7",
+					"userConfig": {
+						"jsClass": "Principal",
+						"userXType": "principal"
+					},
+					"userComponent": "MyPanel6"
+				}
+			]
+		},
+		{
+			"id": "MyPanel8",
+			"cid": "panel",
+			"jsClass": "Forum",
+			"userConfig": {
+				"title": "Fórum",
+				"width": 771,
+				"height": 188,
+				"layout": "fit"
+			},
+			"userXType": "forum",
+			"cn": [
+				{
+					"id": "MyToolbar3",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar3",
+					"dock": "tbar",
 					"cn": [
 						{
-							"id": "MyToolbar2",
-							"cid": "toolbar",
-							"jsClass": "MyToolbar2",
-							"dock": "tbar"
+							"id": "MyButton7",
+							"cid": "button",
+							"jsClass": "MyButton7",
+							"userConfig": {
+								"text": "Novo topico"
+							}
+						},
+						{
+							"id": "MyFill",
+							"cid": "tbfill",
+							"jsClass": "MyFill"
+						},
+						{
+							"id": "MyButton8",
+							"cid": "button",
+							"jsClass": "MyButton8",
+							"userConfig": {
+								"text": "Filtrar",
+								"height": 22
+							}
 						}
 					]
 				},
 				{
-					"id": "MyPanel6",
-					"cid": "panel",
-					"jsClass": "MyPanel7",
+					"id": "MyGrid",
+					"cid": "grid",
+					"jsClass": "MyGrid",
 					"userConfig": {
-						"title": "Tab 2"
+						"title": "-ext-undefined-",
+						"store": "Forum",
+						"forceLayout": "-ext-undefined-",
+						"hideBorders": true,
+						"animCollapse": false,
+						"border": false,
+						"headerAsText": "-ext-undefined-",
+						"header": "-ext-undefined-"
+					},
+					"cn": [
+						{
+							"id": "MyColumn",
+							"cid": "gridcolumn",
+							"jsClass": "MyColumn",
+							"userConfig": {
+								"dataIndex": "title",
+								"header": "Column",
+								"sortable": true,
+								"resizable": "-ext-undefined-",
+								"width": 100
+							}
+						},
+						{
+							"id": "MyColumn4",
+							"cid": "gridcolumn",
+							"jsClass": "MyColumn4",
+							"userConfig": {
+								"header": "Column",
+								"sortable": true,
+								"resizable": "-ext-undefined-",
+								"width": 100,
+								"dataIndex": "contents"
+							}
+						},
+						{
+							"id": "MyColumn1",
+							"cid": "numbercolumn",
+							"jsClass": "MyColumn1",
+							"userConfig": {
+								"dataIndex": "title",
+								"header": "Column",
+								"sortable": true,
+								"resizable": "-ext-undefined-",
+								"width": 100,
+								"align": "right"
+							}
+						},
+						{
+							"id": "MyColumn2",
+							"cid": "datecolumn",
+							"jsClass": "MyColumn2",
+							"userConfig": {
+								"dataIndex": "date",
+								"header": "Column",
+								"sortable": true,
+								"resizable": "-ext-undefined-",
+								"width": 100
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyViewport",
+			"cid": "viewport",
+			"jsClass": "Main",
+			"userConfig": {
+				"layout": "border",
+				"hideBorders": "-ext-undefined-"
+			},
+			"cn": [
+				{
+					"id": "MyUserComponent4",
+					"cid": "usercomponent",
+					"jsClass": "Navegacao",
+					"userConfig": {
+						"jsClass": "Navegacao",
+						"userXType": "navegacao",
+						"region": "west",
+						"margins": "5 0 5 5",
+						"split": true
+					},
+					"userComponent": "MyPanel"
+				},
+				{
+					"id": "MyUserComponent6",
+					"cid": "usercomponent",
+					"jsClass": "Detalhe",
+					"userConfig": {
+						"jsClass": "Detalhe",
+						"userXType": "detalhe",
+						"region": "east",
+						"width": 100,
+						"margins": "5 5 5 0",
+						"split": true
+					},
+					"userComponent": "MyPanel5"
+				},
+				{
+					"id": "MyUserComponent",
+					"cid": "usercomponent",
+					"jsClass": "Conteudo",
+					"userConfig": {
+						"jsClass": "Conteudo",
+						"userXType": "conteudo",
+						"region": "center",
+						"margins": "5 0 5 0"
+					},
+					"userComponent": "MyTabPanel"
+				}
+			]
+		},
+		{
+			"id": "MyPanel3",
+			"cid": "panel",
+			"jsClass": "Eventos",
+			"userConfig": {
+				"title": "Eventos"
+			},
+			"userXType": "eventos",
+			"cn": [
+				{
+					"id": "MyToolbar2",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar2",
+					"dock": "tbar"
+				}
+			]
+		},
+		{
+			"id": "MyPanel6",
+			"cid": "panel",
+			"jsClass": "Principal",
+			"userConfig": {
+				"title": "Principal"
+			},
+			"userXType": "principal"
+		}
+	],
+	"stores": [
+		{
+			"id": "MyStore",
+			"cid": "jsonstore",
+			"jsClass": "ForumStore",
+			"userConfig": {
+				"storeId": "Forum",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"url": "/forums.json",
+				"root": "entries",
+				"autoLoad": true
+			},
+			"cn": [
+				{
+					"id": "MyField",
+					"cid": "datafield",
+					"jsClass": "MyField",
+					"userConfig": {
+						"name": "contents",
+						"mapping": "contents"
 					}
 				},
 				{
-					"id": "MyPanel7",
-					"cid": "panel",
-					"jsClass": "MyPanel8",
+					"id": "MyField1",
+					"cid": "datafield",
+					"jsClass": "MyField1",
 					"userConfig": {
-						"title": "Tab 3"
+						"name": "title",
+						"mapping": "title"
+					}
+				},
+				{
+					"id": "MyField2",
+					"cid": "datafield",
+					"jsClass": "MyField2",
+					"userConfig": {
+						"name": "field"
 					}
 				}
 			]
 		}
-	],
-	"stores": []
+	]
 }
