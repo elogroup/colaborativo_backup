@@ -290,17 +290,6 @@
 					]
 				},
 				{
-					"id": "MyPanel10",
-					"cid": "panel",
-					"jsClass": "MyPanel",
-					"userConfig": {
-						"height": 100,
-						"title": "Descrição do Grupo",
-						"autoHeight": true,
-						"autoWidth": true
-					}
-				},
-				{
 					"id": "MyPanel11",
 					"cid": "panel",
 					"jsClass": "MyPanel3",
