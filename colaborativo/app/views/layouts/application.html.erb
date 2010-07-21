@@ -1,37 +1,14 @@
-<!-- Auto Generated with Ext Designer -->
-<!-- Modifications to this file will be overwritten. -->
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>colaborativo.xds</title>
-
-    <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/ext-3.2.1/resources/css/ext-all.css"/>
-    <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.2.1/adapter/ext/ext-base.js"></script>
-    <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.2.1/ext-all-debug.js"></script>
-
-		<%= app_files %>
+  <title>Colaborativo</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
 </head>
 <body>
-<script>	
-Ext.onReady(function() {
-    // var conteudo = new Conteudo({
-    //     renderTo: Ext.getBody()
-    // });
-    // conteudo.show();
-		// new Ext.Viewport({
-		//     layout: 'border',
-		//     items: [{xtype:'navegacao'}]
-		// }
-    				
-    
-    var main = new Main({
-        renderTo: Ext.getBody()
-    });
-    main.show();
-		console.debug(main)
-});
-</script>
-	
-	
+
+<%= yield %>
+
 </body>
 </html>
