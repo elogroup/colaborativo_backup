@@ -1,0 +1,17 @@
+<%= form_for(@papel) do |f| %>
+  <% if @papel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@papel.errors.count, "error") %> prohibited this papel from being saved:</h2>
+
+      <ul>
+      <% @papel.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

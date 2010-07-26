@@ -1,0 +1,21 @@
+<h1>Listing papeis</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @papeis.each do |papel| %>
+  <tr>
+    <td><%= link_to 'Show', papel %></td>
+    <td><%= link_to 'Edit', edit_papel_path(papel) %></td>
+    <td><%= link_to 'Destroy', papel, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Papel', new_papel_path %>

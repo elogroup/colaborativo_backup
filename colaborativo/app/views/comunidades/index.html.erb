@@ -1,0 +1,27 @@
+<h1>Listing comunidades</h1>
+
+<table border="1">
+  <tr>
+		<th>Titulo</th>
+		<th>Descricao</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @comunidades.each do |comunidade| %>
+  <tr>
+		<td><%= comunidade.titulo %></td>
+		<td><%= comunidade.descricao %></td>
+
+    <td><%= link_to 'Show', comunidade %></td>
+    <td><%= link_to 'Edit', edit_comunidade_path(comunidade) %></td>
+    <td><%= link_to 'Destroy', comunidade, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Comunidade', new_comunidade_path %>
