@@ -10,12 +10,13 @@
 		"exportPath": "../js/",
 		"lineEnding": "LF"
 	},
-	"xdsVersion": "xds-1.0.2.1",
+	"xdsVersion": "xds-1.0.2.11",
 	"components": [
 		{
 			"id": "MyForm",
 			"cid": "form",
 			"jsClass": "PainelPrincipal",
+			"snapToGrid": 10,
 			"userConfig": {
 				"width": 856,
 				"height": 700,
@@ -40,6 +41,7 @@
 					"id": "MyUserComponent",
 					"cid": "usercomponent",
 					"jsClass": "Navegacao",
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Navegacao",
 						"userXType": "navegacao",
@@ -54,17 +56,22 @@
 					"id": "MyUserComponent1",
 					"cid": "usercomponent",
 					"jsClass": "Principal",
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Principal",
 						"userXType": "principal",
-						"region": "center"
+						"region": "center",
+						"collapseMode": "standard",
+						"collapsible": "-ext-undefined-",
+						"floatable": false
 					},
 					"userComponent": "MyPanel4"
 				},
 				{
 					"id": "MyUserComponent2",
 					"cid": "usercomponent",
-					"jsClass": "MyPanel5",
+					"jsClass": "Detalhe",
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Detalhe",
 						"userXType": "detalhe",
@@ -81,6 +88,7 @@
 			"id": "MyPanel",
 			"cid": "panel",
 			"jsClass": "Navegacao",
+			"snapToGrid": 10,
 			"layoutConfig": {
 				"collapseFirst": false
 			},
@@ -103,6 +111,7 @@
 					"id": "MyTreePanel",
 					"cid": "treepanel",
 					"jsClass": "MyTree",
+					"snapToGrid": 10,
 					"userConfig": {
 						"title": "Grupos",
 						"rootVisible": false
@@ -113,6 +122,7 @@
 							"cid": "asynctreenode",
 							"jsClass": "MyAsyncTreeNode",
 							"dock": "root",
+							"snapToGrid": 10,
 							"userConfig": {
 								"text": "Root Node"
 							}
@@ -121,18 +131,21 @@
 							"id": "MyTreeLoader",
 							"cid": "treeloader",
 							"jsClass": "MyTreeLoader",
-							"dock": "loader"
+							"dock": "loader",
+							"snapToGrid": 10
 						},
 						{
 							"id": "MyToolbar",
 							"cid": "toolbar",
 							"jsClass": "MyToolbar",
 							"dock": "tbar",
+							"snapToGrid": 10,
 							"cn": [
 								{
 									"id": "MyButton",
 									"cid": "button",
 									"jsClass": "MyButton",
+									"snapToGrid": 10,
 									"userConfig": {
 										"text": "Todos",
 										"autoRef": "todosBtn"
@@ -141,12 +154,14 @@
 								{
 									"id": "MySeparator",
 									"cid": "tbseparator",
-									"jsClass": "MySeparator"
+									"jsClass": "MySeparator",
+									"snapToGrid": 10
 								},
 								{
 									"id": "MyButton1",
 									"cid": "button",
 									"jsClass": "MyButton1",
+									"snapToGrid": 10,
 									"userConfig": {
 										"text": "Meus",
 										"autoRef": "meusBtn"
@@ -159,12 +174,14 @@
 				{
 					"id": "MyPanel1",
 					"cid": "panel",
-					"jsClass": "MyPanel"
+					"jsClass": "MyPanel",
+					"snapToGrid": 10
 				},
 				{
 					"id": "MyPanel2",
 					"cid": "panel",
-					"jsClass": "MyPanel1"
+					"jsClass": "MyPanel1",
+					"snapToGrid": 10
 				}
 			]
 		},
@@ -172,13 +189,14 @@
 			"id": "MyPanel4",
 			"cid": "panel",
 			"jsClass": "Principal",
+			"snapToGrid": 10,
 			"userConfig": {
 				"title": "Principal",
 				"layout": "accordion",
 				"collapsible": "-ext-undefined-",
 				"width": 725,
 				"height": 514,
-				"activeItem": 1
+				"activeItem": 0
 			},
 			"userXType": "principal",
 			"cn": [
@@ -187,24 +205,30 @@
 					"cid": "toolbar",
 					"jsClass": "MyToolbar1",
 					"dock": "tbar",
+					"snapToGrid": 10,
 					"cn": [
 						{
-							"id": "MyButton2",
-							"cid": "button",
+							"id": "MySplitButton",
+							"cid": "splitbutton",
 							"jsClass": "MyButton2",
+							"snapToGrid": 10,
 							"userConfig": {
-								"text": "Sumário"
+								"text": "Sumário",
+								"icon": "icons/add.png",
+								"iconCls": "-ext-undefined-"
 							}
 						},
 						{
 							"id": "MySeparator1",
 							"cid": "tbseparator",
-							"jsClass": "MySeparator1"
+							"jsClass": "MySeparator1",
+							"snapToGrid": 10
 						},
 						{
-							"id": "MyButton3",
-							"cid": "button",
+							"id": "MySplitButton1",
+							"cid": "splitbutton",
 							"jsClass": "MyButton3",
+							"snapToGrid": 10,
 							"userConfig": {
 								"text": "Fórum"
 							},
@@ -214,11 +238,13 @@
 									"cid": "menu",
 									"jsClass": "MyMenu",
 									"dock": "menu",
+									"snapToGrid": 10,
 									"cn": [
 										{
 											"id": "MyMenuItem",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Filtrar Tópicos"
 											}
@@ -227,6 +253,7 @@
 											"id": "MyMenuItem1",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem1",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Publicar Novo Tópico"
 											}
@@ -238,12 +265,14 @@
 						{
 							"id": "MySeparator2",
 							"cid": "tbseparator",
-							"jsClass": "MySeparator2"
+							"jsClass": "MySeparator2",
+							"snapToGrid": 10
 						},
 						{
-							"id": "MyButton4",
-							"cid": "button",
+							"id": "MySplitButton2",
+							"cid": "splitbutton",
 							"jsClass": "MyButton4",
+							"snapToGrid": 10,
 							"userConfig": {
 								"text": "Eventos"
 							},
@@ -253,11 +282,13 @@
 									"cid": "menu",
 									"jsClass": "MyMenu1",
 									"dock": "menu",
+									"snapToGrid": 10,
 									"cn": [
 										{
 											"id": "MyMenuItem2",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem2",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Filtrar Eventos"
 											}
@@ -266,6 +297,7 @@
 											"id": "MyMenuItem3",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem3",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Publicar Novo Evento"
 											}
@@ -277,12 +309,14 @@
 						{
 							"id": "MySeparator3",
 							"cid": "tbseparator",
-							"jsClass": "MySeparator3"
+							"jsClass": "MySeparator3",
+							"snapToGrid": 10
 						},
 						{
-							"id": "MyButton5",
-							"cid": "button",
+							"id": "MySplitButton3",
+							"cid": "splitbutton",
 							"jsClass": "MyButton5",
+							"snapToGrid": 10,
 							"userConfig": {
 								"text": "Arquivos"
 							},
@@ -292,11 +326,13 @@
 									"cid": "menu",
 									"jsClass": "MyMenu2",
 									"dock": "menu",
+									"snapToGrid": 10,
 									"cn": [
 										{
 											"id": "MyMenuItem4",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem4",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Filtrar Arquivos"
 											}
@@ -305,6 +341,7 @@
 											"id": "MyMenuItem5",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem5",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Publicar Novo Arquivo"
 											}
@@ -316,12 +353,14 @@
 						{
 							"id": "MySeparator4",
 							"cid": "tbseparator",
-							"jsClass": "MySeparator4"
+							"jsClass": "MySeparator4",
+							"snapToGrid": 10
 						},
 						{
-							"id": "MyButton6",
-							"cid": "button",
+							"id": "MySplitButton4",
+							"cid": "splitbutton",
 							"jsClass": "MyButton6",
+							"snapToGrid": 10,
 							"userConfig": {
 								"text": "Seguidores"
 							},
@@ -331,11 +370,13 @@
 									"cid": "menu",
 									"jsClass": "MyMenu3",
 									"dock": "menu",
+									"snapToGrid": 10,
 									"cn": [
 										{
 											"id": "MyMenuItem6",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem6",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Ver Seguidores do Grupo"
 											}
@@ -344,6 +385,7 @@
 											"id": "MyMenuItem7",
 											"cid": "menuitem",
 											"jsClass": "MyMenuItem7",
+											"snapToGrid": 10,
 											"userConfig": {
 												"text": "Enviar Mensagem a um Seguidor"
 											}
@@ -358,8 +400,19 @@
 					"id": "MyPanel11",
 					"cid": "panel",
 					"jsClass": "MyPanel3",
+					"snapToGrid": 10,
 					"userConfig": {
-						"title": "My Panel"
+						"title": "Descrição",
+						"height": 200
+					}
+				},
+				{
+					"id": "MyPanel8",
+					"cid": "panel",
+					"jsClass": "MyPanel8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "Sumário"
 					}
 				}
 			]
@@ -368,6 +421,7 @@
 			"id": "MyPanel5",
 			"cid": "panel",
 			"jsClass": "Detalhe",
+			"snapToGrid": 10,
 			"userConfig": {
 				"width": "-ext-undefined-",
 				"autoScroll": true,
@@ -379,6 +433,7 @@
 			"id": "MyTabPanel",
 			"cid": "tabpanel",
 			"jsClass": "Conteudo",
+			"snapToGrid": 10,
 			"userConfig": {
 				"activeTab": 2,
 				"width": 578,
@@ -389,6 +444,7 @@
 					"id": "MyPanel3",
 					"cid": "panel",
 					"jsClass": "MyPanel6",
+					"snapToGrid": 10,
 					"userConfig": {
 						"title": "Tab 1"
 					},
@@ -397,7 +453,8 @@
 							"id": "MyToolbar2",
 							"cid": "toolbar",
 							"jsClass": "MyToolbar2",
-							"dock": "tbar"
+							"dock": "tbar",
+							"snapToGrid": 10
 						}
 					]
 				},
@@ -405,6 +462,7 @@
 					"id": "MyPanel6",
 					"cid": "panel",
 					"jsClass": "MyPanel7",
+					"snapToGrid": 10,
 					"userConfig": {
 						"title": "Tab 2"
 					}
@@ -413,6 +471,7 @@
 					"id": "MyPanel7",
 					"cid": "panel",
 					"jsClass": "MyPanel8",
+					"snapToGrid": 10,
 					"userConfig": {
 						"title": "Tab 3"
 					}
