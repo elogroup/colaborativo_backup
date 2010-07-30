@@ -1,0 +1,17 @@
+<%= form_for(@conteudo) do |f| %>
+  <% if @conteudo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@conteudo.errors.count, "error") %> prohibited this conteudo from being saved:</h2>
+
+      <ul>
+      <% @conteudo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

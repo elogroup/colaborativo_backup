@@ -1,0 +1,20 @@
+<%= form_for(@comunidade) do |f| %>
+  <% if @comunidade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comunidade.errors.count, "error") %> prohibited this comunidade from being saved:</h2>
+
+      <ul>
+      <% @comunidade.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+		<%= f.text_field :titulo %>
+		
+		<%= f.text_field :descricao %>
+    <%= f.submit %>
+  </div>
+<% end %>
