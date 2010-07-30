@@ -17,6 +17,7 @@ Colaborativo::Application.routes.draw do |map|
   resources :comunidades do
     resources :conteudos
     resources :membros
+    resources :forums
   end
 
   # Sample resource route with options:
