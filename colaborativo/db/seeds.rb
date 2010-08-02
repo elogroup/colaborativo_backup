@@ -7,4 +7,4 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 
-comunidade = Comunidade.create([{:titulo => "Teste" }])
+comunidade = Comunidade.create([{:titulo => "Teste"}])

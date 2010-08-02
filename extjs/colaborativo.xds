@@ -7,7 +7,7 @@
 		"spacesToIndent": "4",
 		"codeGenFormat": "Class",
 		"extPath": "http://extjs.cachefly.net/ext-3.2.1/",
-		"exportPath": "../colaborativo/public/javascripts/app",
+		"exportPath": "../colaborativo/",
 		"lineEnding": "LF"
 	},
 	"xdsVersion": "xds-1.0.2.11",
