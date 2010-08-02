@@ -10,7 +10,6 @@
 		"exportPath": "../colaborativo/public/javascripts/app",
 		"lineEnding": "LF"
 	},
-<<<<<<< HEAD
 	"xdsVersion": "xds-1.0.2.11",
 	"components": [
 		{
@@ -86,11 +85,6 @@
 			]
 		},
 		{
-=======
-	"xdsVersion": "xds-1.0.2.2",
-	"components": [
-		{
->>>>>>> 933bac929c3e39cf6343d72623ae15b02fecfa76
 			"id": "MyPanel",
 			"cid": "panel",
 			"jsClass": "Navegacao",
@@ -453,6 +447,7 @@
 					"id": "MyUserComponent3",
 					"cid": "usercomponent",
 					"jsClass": "Forum",
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Forum",
 						"userXType": "forum"
@@ -462,7 +457,7 @@
 				{
 					"id": "MyUserComponent1",
 					"cid": "usercomponent",
-					"jsClass": "MyPanel6",
+					"jsClass": "Eventos",
 					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Eventos",
@@ -473,7 +468,8 @@
 				{
 					"id": "MyUserComponent2",
 					"cid": "usercomponent",
-					"jsClass": "MyPanel7",
+					"jsClass": "Principal",
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Principal",
 						"userXType": "principal"
@@ -486,6 +482,7 @@
 			"id": "MyPanel8",
 			"cid": "panel",
 			"jsClass": "Forum",
+			"snapToGrid": 10,
 			"userConfig": {
 				"title": "Fórum",
 				"width": 771,
@@ -499,18 +496,13 @@
 					"cid": "toolbar",
 					"jsClass": "MyToolbar3",
 					"dock": "tbar",
+					"snapToGrid": 10,
 					"cn": [
 						{
-<<<<<<< HEAD
-							"id": "MyToolbar2",
-							"cid": "toolbar",
-							"jsClass": "MyToolbar2",
-							"dock": "tbar",
-							"snapToGrid": 10
-=======
 							"id": "MyButton7",
 							"cid": "button",
 							"jsClass": "MyButton7",
+							"snapToGrid": 10,
 							"userConfig": {
 								"text": "Novo topico"
 							}
@@ -518,30 +510,26 @@
 						{
 							"id": "MyFill",
 							"cid": "tbfill",
-							"jsClass": "MyFill"
+							"jsClass": "MyFill",
+							"snapToGrid": 10
 						},
 						{
 							"id": "MyButton8",
 							"cid": "button",
 							"jsClass": "MyButton8",
+							"snapToGrid": 10,
 							"userConfig": {
 								"text": "Filtrar",
 								"height": 22
 							}
->>>>>>> 933bac929c3e39cf6343d72623ae15b02fecfa76
 						}
 					]
 				},
 				{
-<<<<<<< HEAD
-					"id": "MyPanel6",
-					"cid": "panel",
-					"jsClass": "MyPanel7",
-					"snapToGrid": 10,
-=======
 					"id": "MyGrid",
 					"cid": "grid",
 					"jsClass": "MyGrid",
+					"snapToGrid": 10,
 					"userConfig": {
 						"title": "-ext-undefined-",
 						"store": "Forum",
@@ -557,6 +545,7 @@
 							"id": "MyColumn",
 							"cid": "gridcolumn",
 							"jsClass": "MyColumn",
+							"snapToGrid": 10,
 							"userConfig": {
 								"dataIndex": "title",
 								"header": "Column",
@@ -569,6 +558,7 @@
 							"id": "MyColumn4",
 							"cid": "gridcolumn",
 							"jsClass": "MyColumn4",
+							"snapToGrid": 10,
 							"userConfig": {
 								"header": "Column",
 								"sortable": true,
@@ -581,6 +571,7 @@
 							"id": "MyColumn1",
 							"cid": "numbercolumn",
 							"jsClass": "MyColumn1",
+							"snapToGrid": 10,
 							"userConfig": {
 								"dataIndex": "title",
 								"header": "Column",
@@ -594,6 +585,7 @@
 							"id": "MyColumn2",
 							"cid": "datecolumn",
 							"jsClass": "MyColumn2",
+							"snapToGrid": 10,
 							"userConfig": {
 								"dataIndex": "date",
 								"header": "Column",
@@ -610,6 +602,7 @@
 			"id": "MyViewport",
 			"cid": "viewport",
 			"jsClass": "Main",
+			"snapToGrid": 10,
 			"userConfig": {
 				"layout": "border",
 				"hideBorders": "-ext-undefined-"
@@ -619,6 +612,7 @@
 					"id": "MyUserComponent4",
 					"cid": "usercomponent",
 					"jsClass": "Navegacao",
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Navegacao",
 						"userXType": "navegacao",
@@ -632,7 +626,7 @@
 					"id": "MyUserComponent6",
 					"cid": "usercomponent",
 					"jsClass": "Detalhe",
->>>>>>> 933bac929c3e39cf6343d72623ae15b02fecfa76
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Detalhe",
 						"userXType": "detalhe",
@@ -647,6 +641,7 @@
 					"id": "MyUserComponent",
 					"cid": "usercomponent",
 					"jsClass": "Conteudo",
+					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Conteudo",
 						"userXType": "conteudo",
@@ -661,6 +656,7 @@
 			"id": "MyPanel3",
 			"cid": "panel",
 			"jsClass": "Eventos",
+			"snapToGrid": 10,
 			"userConfig": {
 				"title": "Eventos"
 			},
@@ -670,7 +666,8 @@
 					"id": "MyToolbar2",
 					"cid": "toolbar",
 					"jsClass": "MyToolbar2",
-					"dock": "tbar"
+					"dock": "tbar",
+					"snapToGrid": 10
 				}
 			]
 		},
@@ -678,6 +675,7 @@
 			"id": "MyPanel6",
 			"cid": "panel",
 			"jsClass": "Principal",
+			"snapToGrid": 10,
 			"userConfig": {
 				"title": "Principal"
 			},
@@ -689,6 +687,7 @@
 			"id": "MyStore",
 			"cid": "jsonstore",
 			"jsClass": "ForumStore",
+			"snapToGrid": 10,
 			"userConfig": {
 				"storeId": "Forum",
 				"restful": true,
@@ -702,22 +701,17 @@
 					"id": "MyField",
 					"cid": "datafield",
 					"jsClass": "MyField",
+					"snapToGrid": 10,
 					"userConfig": {
 						"name": "contents",
 						"mapping": "contents"
 					}
 				},
 				{
-<<<<<<< HEAD
-					"id": "MyPanel7",
-					"cid": "panel",
-					"jsClass": "MyPanel8",
-					"snapToGrid": 10,
-=======
 					"id": "MyField1",
 					"cid": "datafield",
 					"jsClass": "MyField1",
->>>>>>> 933bac929c3e39cf6343d72623ae15b02fecfa76
+					"snapToGrid": 10,
 					"userConfig": {
 						"name": "title",
 						"mapping": "title"
@@ -727,6 +721,7 @@
 					"id": "MyField2",
 					"cid": "datafield",
 					"jsClass": "MyField2",
+					"snapToGrid": 10,
 					"userConfig": {
 						"name": "field"
 					}
