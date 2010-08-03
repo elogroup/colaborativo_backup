@@ -22,10 +22,12 @@ MainUi = Ext.extend(Ext.Viewport, {
             },
             {
                 region: 'east',
-                width: 200,
+                width: 500,
                 margins: '5 5 5 0',
                 split: true,
-                xtype: 'detalhe'
+                layout:'fit',
+                xtype: 'detalhe',
+                id:'detalhes'
             },
             {
                 region: 'center',
