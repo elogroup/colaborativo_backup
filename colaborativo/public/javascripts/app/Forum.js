@@ -11,12 +11,56 @@
  * class.
  */
 
+
+ConteudoView = Ext.extend(Ext.Panel, {
+    border:false,
+     tpl:"<div class='conteudo'><div class='titulo'><div class='data'>data<br />XX comentários</div><strong>{titulo}</strong><br /><em>autor</em></div><p>{texto}</p></div>",
+     initComponent: function() {
+         console.debug(this.data)
+         ConteudoView.superclass.initComponent.call(this);
+     }
+ });
+Ext.reg('conteudoview', ConteudoView);
+
 Forum = Ext.extend(ForumUi, {
     initComponent: function() {
         Forum.superclass.initComponent.call(this);
         
         this.novoTopico.on('click', function() {
-            alert("criar novo topico")
+            var detalhes = Ext.getCmp('detalhes');
+            
+            console.debug(detalhes)
+            detalhes.removeAll(true);
+            
+            detalhes.add({
+                standardSubmit: false,
+                url: '/comunidades/1/forums.json',
+                xtype:'form',
+                padding:10,
+                labelAlign:'top',
+                title:'Crie um novo tópico',
+                items:[
+                    {xtype:'textfield', name:"forum[titulo]", fieldLabel:"Título do tópico"},
+                    {xtype:'htmleditor', name:"forum[texto]", fieldLabel:"Descrição",}
+                ],
+                buttons:[
+                    {text:'Salvar', handler: function(){
+                        var fp = this.ownerCt.ownerCt,
+                            form = fp.getForm();
+                        // if (form.isValid()) {
+                        form.submit({
+                            success: function(form, action) {
+                                Ext.StoreMgr.lookup('conteudo').reload();
+                                Ext.Msg.alert('Success', action.result.msg);
+                            }
+                        });
+                    }}, {text:'Cancelar'}
+                ]
+                
+            })
+            // detalhes.setLayout('fit')
+            detalhes.doLayout();
+            // alert("criar novo topico")
         })
         
     }

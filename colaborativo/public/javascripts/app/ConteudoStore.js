@@ -16,6 +16,7 @@ var Conteudo = Ext.data.Record.create([
     'texto',
     {name: 'created_at', type: 'date'},
     {name: 'updated_at', type: 'date'},
+    'autor'
      // {name: 'lastPoster', mapping: 'user2'},
      // {name: 'excerpt', mapping: 'post_text', allowBlank: false},
      // In the simplest case, if no properties other than name are required,
