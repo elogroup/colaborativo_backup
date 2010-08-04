@@ -14,7 +14,7 @@ ForumUi = Ext.extend(Ext.Panel, {
     title: 'Fórum',
     width: 771,
     height: 188,
-    layout: 'fit',
+    layout: 'fit',    
     initComponent: function() {
         this.tbar = {
             xtype: 'toolbar',
@@ -55,7 +55,7 @@ ForumUi = Ext.extend(Ext.Panel, {
                     },
                     {
                         xtype: 'numbercolumn',
-                        header: 'created_at',
+                        header: 'Criado em',
                         
                         menuDisabled: true,
                         width: 100,

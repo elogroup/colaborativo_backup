@@ -436,10 +436,11 @@
 			"snapToGrid": 10,
 			"userConfig": {
 				"activeTab": 2,
-				"width": "-ext-undefined-",
+				"width": 450,
 				"height": "-ext-undefined-",
 				"padding": "",
-				"tabMargin": 3
+				"tabMargin": 3,
+				"iconCls": "-ext-undefined-"
 			},
 			"userXType": "conteudo",
 			"cn": [
@@ -450,7 +451,8 @@
 					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Forum",
-						"userXType": "forum"
+						"userXType": "forum",
+						"iconCls": "-ext-undefined-"
 					},
 					"userComponent": "MyPanel8"
 				},
@@ -461,7 +463,8 @@
 					"snapToGrid": 10,
 					"userConfig": {
 						"jsClass": "Eventos",
-						"userXType": "eventos"
+						"userXType": "eventos",
+						"width": 450
 					},
 					"userComponent": "MyPanel3"
 				},

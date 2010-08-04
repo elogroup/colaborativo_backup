@@ -11,17 +11,15 @@
  */
 
 PainelPrincipalUi = Ext.extend(Ext.form.FormPanel, {
-    width: 856,
+    width: 400,
     height: 700,
     title: 'Elo Group',
-    autoHeight: false,
-    autoWidth: true,
+    autoHeight: false,    
     titleCollapse: true,
     bodyBorder: false,
     hideBorders: false,
     layout: 'border',
-    footer: true,
-    closable: false,
+    footer: true,    
     initComponent: function() {
         this.items = [
             {

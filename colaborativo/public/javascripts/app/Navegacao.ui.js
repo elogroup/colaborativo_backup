@@ -14,7 +14,7 @@ NavegacaoUi = Ext.extend(Ext.Panel, {
     layout: 'accordion',
     title: 'Navegação',
     activeItem: 0,
-    width: 200,
+    width: 230,
     height: 580,
     closable: true,
     hidden: false,
@@ -28,7 +28,7 @@ NavegacaoUi = Ext.extend(Ext.Panel, {
         this.items = [
             {
                 xtype: 'treepanel',
-                title: 'Grupos',
+                title: 'Grupos', 
                 border:false,
                 rootVisible: true,
                 root: {
@@ -45,7 +45,8 @@ NavegacaoUi = Ext.extend(Ext.Panel, {
                     items: [
                         {
                             xtype: 'button',
-                            text: 'Todos',
+                            text: 'Todos os Grupos',
+                            icon:'images/icons/group.png',
                             ref: '../../todosBtn'
                         },
                         {
@@ -53,7 +54,8 @@ NavegacaoUi = Ext.extend(Ext.Panel, {
                         },
                         {
                             xtype: 'button',
-                            text: 'Meus',
+                            text: 'Meus Grupos',
+                            icon: 'images/icons/user.png',
                             ref: '../../meusBtn'
                         }
                     ]
