@@ -14,6 +14,12 @@
 Navegacao = Ext.extend(NavegacaoUi, {
     initComponent: function() {
         Navegacao.superclass.initComponent.call(this);
+        console.debug(this.nav)
+        this.nav.on('click', function(node) {
+          console.debug(node.attributes.id)
+          
+          Ext.StoreMgr.get('conteudo').setComunidade( node.attributes.id )
+        });
     }
 });
 Ext.reg('navegacao', Navegacao);
