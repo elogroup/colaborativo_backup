@@ -52,6 +52,11 @@ ConteudoStore = Ext.extend(Ext.data.JsonStore, {
             //     }
             // ]
         }, cfg));
+    },
+    setComunidade:function(id) {
+        this.proxy.setUrl("/comunidades/" + id + "/conteudos.json")
+        this.load()
+  
     }
 });
 new ConteudoStore();

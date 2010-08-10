@@ -13,7 +13,6 @@
 DetalheUi = Ext.extend(Ext.Panel, {
     autoScroll: true,
     title: 'Detalhe',
-    width: 550,
     initComponent: function() {
         DetalheUi.superclass.initComponent.call(this);
     }

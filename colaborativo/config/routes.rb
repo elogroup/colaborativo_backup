@@ -22,7 +22,7 @@ Colaborativo::Application.routes.draw do |map|
     #   get :tree
     # end
     collection do
-      get :tree
+      get :arvore
     end
   end
 
