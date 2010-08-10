@@ -6,12 +6,13 @@ gem 'rails', '3.0.0.beta4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'authlogic'
-gem 'declarative_authorization'
+# gem 'authlogic'
+# gem 'declarative_authorization'
 gem 'inherited_resources', '1.1.2'
 
 # Use unicorn as the web server
 # gem 'unicorn'
+
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -21,11 +22,13 @@ gem 'inherited_resources', '1.1.2'
 
 # Bundle the extra gems:
 # gem 'bj'
-# gem 'nokogiri', '1.4.1'
+
+gem 'nokogiri', '1.4.2'
+
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
-gem "extjs-mvc"
+# gem "extjs-mvc"
 
 # group :test do
 	gem "rspec-rails", ">= 2.0.0.beta.17"

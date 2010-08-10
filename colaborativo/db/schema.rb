@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20100810141648) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "ativo?"
+    t.boolean  "ativo",      :default => true
     t.string   "foto"
   end
 
