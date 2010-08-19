@@ -1,3 +1,2 @@
-class Membro < Papel
-  
+class Membro < Papel  
 end

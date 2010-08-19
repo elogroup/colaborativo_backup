@@ -63,7 +63,7 @@ ForumUi = Ext.extend(Ext.Panel, {
                     },
                     {
                         xtype: 'numbercolumn',
-                        header: 'Data',
+                        header: 'Criado em',
                         menuDisabled: true,
                         width: 20,
                         dataIndex: 'created_at'
