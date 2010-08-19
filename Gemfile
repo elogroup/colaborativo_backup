@@ -15,6 +15,8 @@ gem 'heroku'
 # Use unicorn as the web server
 # gem 'unicorn'
 
+# manipular file upload.
+gem 'paperclip'
 
 # Deploy with Capistrano
 # gem 'capistrano'

@@ -16,7 +16,11 @@ Colaborativo::Application.routes.draw do |map|
 
   resources :comunidades do
     resources :eventos
-    resources :conteudos
+    
+    resources :conteudos do
+      resources :comentarios
+    end
+    
     resources :membros
     resources :forums
     # member do

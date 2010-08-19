@@ -14,10 +14,23 @@
 
 ConteudoView = Ext.extend(Ext.Panel, {
     border:false,
-     tpl:"<div class='conteudo'><div class='titulo'><div class='data'>data<br />XX comentários</div><strong>{titulo}</strong><br /><em>autor</em></div><p>{texto}</p></div>",
+
      initComponent: function() {
+
+         this.items = [
+             {xtype:'panel', ref:'conteudo', tpl:"<div class='conteudo'><div class='titulo'><div class='data'>data<br />XX comentários</div><strong>{titulo}</strong><br /><em>autor</em></div><p>{texto}</p></div>",
+             },
+             {
+                 // TODO: criar store de comentários.
+                 // UTILIZAR UM LISTVIEW PARA RENDERIZAR OS COMENTARIOS.
+                 // ADICIONAR FORMU'ÁRIO DE NOVO COMENTÁRIO
+                 xtype:'panel', title:'comentários', html:'comentarios',
+             }
+         ]
+
          console.debug(this.data)
          ConteudoView.superclass.initComponent.call(this);
+         this.conteudo.data = this.data;
      }
  });
 Ext.reg('conteudoview', ConteudoView);
