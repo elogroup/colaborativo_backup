@@ -29,7 +29,7 @@ Configurando projeto
 	gem install bundler
 	bundler install
 	rake db:migrate db:seed
-
+	unicorn # ou 'rails s'
 
 Deploy para o Heroku
 --------------------

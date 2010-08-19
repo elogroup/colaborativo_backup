@@ -13,7 +13,7 @@ gem 'inherited_resources', '1.1.2'
 gem 'heroku'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # manipular file upload.
 gem 'paperclip'
