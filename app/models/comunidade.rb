@@ -5,6 +5,7 @@ class Comunidade < ActiveRecord::Base
 
   has_many :conteudos
   has_many :forums
+  has_many :eventos
   # TODO: adicionar membros
   
   validates_presence_of :titulo, :message=> "O campo Título deve ser preenchido"

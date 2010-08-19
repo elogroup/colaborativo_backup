@@ -15,6 +15,13 @@ u = Usuario.find_or_create_by_email :email => 'falcao@intelie.com.br', :nome => 
     :usuario => u
 end
 
+
+Evento.find_or_create_by_titulo :titulo=>"Evento 1234",
+  :texto=>"Minha terra tem palmeiras. Lado A LadoB",
+  :comunidade => c,
+  :usuario => u
+
+
 puts "ok"
 
 # p Usuario.first
