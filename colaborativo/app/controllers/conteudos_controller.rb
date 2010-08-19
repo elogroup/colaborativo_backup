@@ -11,6 +11,5 @@ class ConteudosController < InheritedResources::Base
     end
   end
 
-
 end
 

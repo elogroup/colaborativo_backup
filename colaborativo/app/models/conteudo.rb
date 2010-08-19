@@ -11,5 +11,4 @@ class Conteudo < ActiveRecord::Base
   validates_presence_of :texto, :message=>"O campo Texto deve ser preenchido"
   
   
-  
 end
