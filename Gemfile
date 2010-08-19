@@ -10,6 +10,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'authlogic'
 gem 'declarative_authorization'
 gem 'inherited_resources', '1.1.2'
+gem 'heroku'
 
 # Use unicorn as the web server
 # gem 'unicorn'
