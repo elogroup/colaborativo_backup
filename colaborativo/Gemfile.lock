@@ -4,6 +4,10 @@ dependencies:
     group: 
     - :default
     version: = 3.0.0.beta4
+  authlogic: 
+    group: 
+    - :default
+    version: ">= 0"
   sqlite3-ruby: 
     group: 
     - :default
@@ -14,6 +18,10 @@ dependencies:
     group: 
     - :default
     version: = 1.1.2
+  declarative_authorization: 
+    group: 
+    - :default
+    version: ">= 0"
   rails3-generators: 
     group: 
     - :default
@@ -71,8 +79,18 @@ specs:
     version: 3.0.0.beta4
 - activeresource: 
     version: 3.0.0.beta4
+- authlogic: 
+    version: 2.1.6
 - bundler: 
     version: 0.9.26
+- thor: 
+    version: 0.13.8
+- railties: 
+    version: 3.0.0.beta4
+- rails: 
+    version: 3.0.0.beta4
+- declarative_authorization: 
+    version: "0.5"
 - diff-lcs: 
     version: 1.1.2
 - factory_girl: 
@@ -85,12 +103,6 @@ specs:
     version: 1.1.2
 - nokogiri: 
     version: 1.4.2
-- thor: 
-    version: 0.13.8
-- railties: 
-    version: 3.0.0.beta4
-- rails: 
-    version: 3.0.0.beta4
 - rails3-generators: 
     version: 0.12.1
 - rspec-core: 
@@ -107,7 +119,7 @@ specs:
     version: 2.0.0.beta.19
 - sqlite3-ruby: 
     version: 1.3.1
-hash: 13c06bc8d113b38e6943ce3a3c7d408897b96984
+hash: 3df9e8a7a3e90a5dec31e5006f3d3df8cba24c88
 sources: 
 - Rubygems: 
     uri: http://rubygems.org

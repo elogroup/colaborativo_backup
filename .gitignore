@@ -1,5 +1,6 @@
 *.sqlite3
 tmp
 log
+.bundle
 .DS_Store
 cache
